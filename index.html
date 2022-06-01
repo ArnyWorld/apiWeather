@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Weather</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="titulo">Busca el clima</h1>
+        <div id="resultado">
+            <p class="text">Agrega tu ciudad y país</p>
+        </div>
+        <form id="formulario" method="POST" autocomplete="off">
+            <div class="form-control">
+                <input 
+                        type="text" 
+                        name="ciudad"
+                        id="ciudad"
+                        placeholder="Escribe tu Ciudad"
+                        class="w-full p-2 rounded"
+                    />
+            </div>
+
+            <div class="form-control">
+                <select id="pais">
+                    <option disabled selected value="">-- Seleccione --</option>
+                    <option value="AR">Argentina</option>
+                    <option value="BO">Bolivia</option>
+                    <option value="CO">Colombia</option>
+                    <option value="CR">Costa Rica</option>
+                    <option value="ES">España</option>
+                    <option value="US">Estados Unidos</option>
+                    <option value="MX">México</option>
+                    <option value="PE">Perú</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <input type="submit" class="btn" value="Obtener Clima"/>
+            </div>
+        </form>
+
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
